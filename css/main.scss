@@ -1,0 +1,91 @@
+/*components*/
+body {
+	background-color: rgb(226, 226, 226);
+
+}
+
+
+/*general*/
+.site-container {
+	background-color: white;
+	width: 1000px;
+	margin: 30px auto;
+	box-shadow: 0 0 25px rgb(189, 189, 189);
+}
+
+	// NAVIGATION BAR
+	.nav-here {
+		background-color: white;
+		position: fixed;
+		width: 1000px;
+	}
+
+	.phone-num {
+		width: 100%;
+		text-align: right;
+	}
+	.container-fluid {
+		padding: 0 50px;
+	}
+
+	.logo {
+		width: 100px;
+	}
+
+	.navbar-brand {
+		padding: 0;
+	}
+
+	.navbar-collapse  {
+		padding-right: 0px;
+	}
+
+	.navbar-default {
+		background-color: transparent;
+		border-color: transparent;
+
+	}
+	.nav-bar {
+		float: right;
+		.contact {
+			padding-right: 0px;
+		}
+	}
+
+
+
+
+
+
+.main {
+	padding-top: 200px;
+	background: #87e0fd; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #87e0fd 0%, #53cbf1 40%, #0661d8 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#87e0fd), color-stop(40%,#53cbf1), color-stop(100%,#0661d8)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#0661d8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#0661d8 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#0661d8 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #87e0fd 0%,#53cbf1 40%,#0661d8 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#0661d8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	height: 60vh;
+	
+
+	
+}
+.bullets {
+	display: table;
+	width: 550px;
+	float: left;
+	.ser{
+		width: 50%;
+		float: left;
+		display: table-cell;
+	}
+
+}
+
+
+
+.logoman-comp {
+	float: right;
+}
