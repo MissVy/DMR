@@ -2,7 +2,7 @@
 @import 'breakpoint';
 
 body {
-	background-color: rgb(226, 226, 226);
+	background-color: #ECECEC;
 	
 }
 
@@ -14,24 +14,35 @@ body {
 .site-container {
 	background-color: white;
 	margin: 30px auto;
-	box-shadow: 0 0 25px rgb(189, 189, 189);
+	// box-shadow: 0 0 25px rgb(189, 189, 189);
 }
 
 	// NAVIGATION BAR
+
+	.nav-height {
+		height: 70px;
+	}
 	.nav-here {
-		background-color: white;
+		background-color: #ECECEC;
+		width: 100%;
 	}
 
 	.phone-num {
-		width: 100%;
-		text-align: right;
+		width: 240px;
+		height: 40px;
+		float: right;
+		img {
+			height: 100%;
+		}
 	}
+
 	.container-fluid {
-		padding: 0 50px;
+		padding: 30px;
+
 	}
 
 	.logo {
-		width: 100px;
+		width: 150px;
 	}
 
 	.navbar-brand {
@@ -45,80 +56,109 @@ body {
 	.navbar-default {
 		background-color: transparent;
 		border-color: transparent;
-
 	}
+
 	.nav-bar {
 		float: right;
+		margin-top: 10px;
 		.contact {
 			padding-right: 0px;
 		}
-	
-}
-.navbar-toggle {
-	margin-right: 0px;
-}
+	}
 
+	.navbar-toggle {
+		margin-right: 0px;
+	}
 
+	nav.navbar.navbar-default {
+		display: inline;
+		display: right;
+		padding: 0px;
+	}
 
+	.navbar-nav > li > a  {
+		line-height: 0px;
+	}
 
+//main area
 
+	.main {
+		
+		background: #87e0fd; /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  #87e0fd 0%, #53cbf1 40%, #0661d8 100%); /* FF3.6+ */
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#87e0fd), color-stop(40%,#53cbf1), color-stop(100%,#0661d8)); /* Chrome,Safari4+ */
+		background: -webkit-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#0661d8 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#0661d8 100%); /* Opera 12+ */
+		background: -ms-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#0661d8 100%); /* IE10+ */
+		background: radial-gradient(ellipse at center,  #87e0fd 0%,#53cbf1 40%,#0661d8 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#0661d8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		height: 390px;
+	}
 
-.main {
-	
-	background: #87e0fd; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  #87e0fd 0%, #53cbf1 40%, #0661d8 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#87e0fd), color-stop(40%,#53cbf1), color-stop(100%,#0661d8)); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#0661d8 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#0661d8 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#0661d8 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  #87e0fd 0%,#53cbf1 40%,#0661d8 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#0661d8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	.about-service {
+		background-color: #ECECEC;
+	}
 
-	height: 60vh;
-	
-
-	
-}
-.bullets {
-	display: table;
-	width: 550px;
-	float: left;
-	.ser{
-		width: 50%;
+	.bullets {
+		display: table;
+		width: 65%;
 		float: left;
-		display: table-cell;
+		.ser-intro {
+			margin-bottom: 30px;
+			h1 {
+				font-size: 60px;
+				font-weight: bold;
+				color: black;
+			}
+			h1, h4 {
+				margin-top: 5px;
+			}
+		}
+		.ser{
+			width: 50%;
+			float: left;
+			display: table-cell;
+			font-size: 20px;
+			font-family: fantasy;
+			color: white;
+			text-shadow: 1px 1px 2px rgb(0, 40, 83);
+			letter-spacing: 2px;
+			
+		}
 	}
 
-}
-
-
-
-.logoman-comp {
-	float: right;
-	height: 150px;
-	width: 150px;
-	background-image: url('../img/RepairMan-Happ-Comp.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-
-.intro-ser {
-	text-align: center;
-}
-.three-comps {
-	width: 100%;
-	display: table;
-	.comp {
-		padding: 5%;
-		width: 33.33%;
-		display: table-cell;
-
-		.comp1, .comp2, .comp3 {
-			text-align: center;
-		}
+	.logoman-comp {
+		float: right;
+		width: 35%;
+		height: 300px;
 		img {
-			width: 200px;
-			margin: 0 auto;
+			float: right;
+		}
+		
+	}
+	.intro-ser {
+		text-align: center;
+	}
+	.three-comps {
+		width: 100%;
+		display: table;
+		// background-color: rgb(240, 240, 240);
+		.comp-box {
+			margin: 10px;
+			box-shadow: 0px 1px 2px #CFCFCF;
+			padding: 5%;
+			background-color: white;
+		}
+		.comp {
+			padding: 2%;
+			width: 33.33%;
+			display: table-cell;
+
+			.comp1, .comp2, .comp3 {
+				text-align: center;
+			}
+			img {
+				width: 200px;
+				margin: 0 auto;
+			}
 		}
 	}
-}

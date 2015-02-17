@@ -1,6 +1,6 @@
 /*components*/
 body {
-  background-color: #e2e2e2; }
+  background-color: #ECECEC; }
 
 /*general*/
 .container {
@@ -8,21 +8,27 @@ body {
 
 .site-container {
   background-color: white;
-  margin: 30px auto;
-  box-shadow: 0 0 25px #bdbdbd; }
+  margin: 30px auto; }
+
+.nav-height {
+  height: 70px; }
 
 .nav-here {
-  background-color: white; }
+  background-color: #ECECEC;
+  width: 100%; }
 
 .phone-num {
-  width: 100%;
-  text-align: right; }
+  width: 240px;
+  height: 40px;
+  float: right; }
+  .phone-num img {
+    height: 100%; }
 
 .container-fluid {
-  padding: 0 50px; }
+  padding: 30px; }
 
 .logo {
-  width: 100px; }
+  width: 150px; }
 
 .navbar-brand {
   padding: 0; }
@@ -35,12 +41,21 @@ body {
   border-color: transparent; }
 
 .nav-bar {
-  float: right; }
+  float: right;
+  margin-top: 10px; }
   .nav-bar .contact {
     padding-right: 0px; }
 
 .navbar-toggle {
   margin-right: 0px; }
+
+nav.navbar.navbar-default {
+  display: inline;
+  display: right;
+  padding: 0px; }
+
+.navbar-nav > li > a {
+  line-height: 0px; }
 
 .main {
   background: #87e0fd;
@@ -59,24 +74,39 @@ body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#0661d8',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
-  height: 60vh; }
+  height: 390px; }
+
+.about-service {
+  background-color: #ECECEC; }
 
 .bullets {
   display: table;
-  width: 550px;
+  width: 65%;
   float: left; }
+  .bullets .ser-intro {
+    margin-bottom: 30px; }
+    .bullets .ser-intro h1 {
+      font-size: 60px;
+      font-weight: bold;
+      color: black; }
+    .bullets .ser-intro h1, .bullets .ser-intro h4 {
+      margin-top: 5px; }
   .bullets .ser {
     width: 50%;
     float: left;
-    display: table-cell; }
+    display: table-cell;
+    font-size: 20px;
+    font-family: fantasy;
+    color: white;
+    text-shadow: 1px 1px 2px #002853;
+    letter-spacing: 2px; }
 
 .logoman-comp {
   float: right;
-  height: 150px;
-  width: 150px;
-  background-image: url("../img/RepairMan-Happ-Comp.png");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  width: 35%;
+  height: 300px; }
+  .logoman-comp img {
+    float: right; }
 
 .intro-ser {
   text-align: center; }
@@ -84,8 +114,13 @@ body {
 .three-comps {
   width: 100%;
   display: table; }
-  .three-comps .comp {
+  .three-comps .comp-box {
+    margin: 10px;
+    box-shadow: 0px 1px 2px #CFCFCF;
     padding: 5%;
+    background-color: white; }
+  .three-comps .comp {
+    padding: 2%;
     width: 33.33%;
     display: table-cell; }
     .three-comps .comp .comp1, .three-comps .comp .comp2, .three-comps .comp .comp3 {
