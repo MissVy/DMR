@@ -183,8 +183,11 @@ a {
 .our-service {
 	
     width: 100%;
-    border-top:2px solid blue;
 	height: 100vh;
+	background-image: url('../img/hr.png');
+	background-repeat: no-repeat;
+	background-position-x: center;
+	margin-top: 20px;
 
 	.dropdown {
 		width: 70%;
