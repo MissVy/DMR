@@ -10,12 +10,42 @@ body {
 a {
   color: #003C70; }
 
+table {
+  width: 100%; }
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.tg td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal; }
+
+.tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal; }
+
+.th tr {
+  margin: 10px 0; }
+
 /*general*/
 .container {
   padding: 0px; }
 
-.nav-height {
-  height: 70px; }
+@media (min-width: 768px) {
+  .nav-height {
+    height: 70px; } }
 
 .nav-here {
   width: 100%;
@@ -29,24 +59,30 @@ a {
     height: 100%; }
 
 .container-fluid {
-  padding: 30px; }
+  padding-top: 30px; }
+  @media (min-width: 768px) {
+    .container-fluid {
+      padding: 30px; } }
 
 .logo {
-  width: 150px; }
+  width: 110px; }
 
 .navbar-brand {
   padding: 0; }
 
-.navbar-collapse {
-  padding-right: 0px; }
+@media (min-width: 768px) {
+  .navbar-collapse {
+    padding-right: 0px; } }
 
 .navbar-default {
   background-color: transparent;
   border-color: transparent; }
 
 .nav-bar {
-  float: right;
   margin-top: 10px; }
+  @media (min-width: 768px) {
+    .nav-bar {
+      float: right; } }
   .nav-bar .contact {
     padding-right: 0px; }
 
@@ -60,6 +96,12 @@ nav.navbar.navbar-default {
 
 .navbar-nav > li > a {
   line-height: 0px; }
+
+.nav > li > a {
+  padding: 15px 0px; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-top: 0px; }
 
 .main {
   background: #d0e4f4;
@@ -78,7 +120,7 @@ nav.navbar.navbar-default {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f4', endColorstr='#87a9c6',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
-  height: 590px; }
+  padding-bottom: 20px; }
 
 .about-service {
   background-color: #ECECEC; }
@@ -90,30 +132,36 @@ nav.navbar.navbar-default {
   .bullets .ser-intro {
     margin-bottom: 30px; }
     .bullets .ser-intro h1 {
-      font-size: 8em;
+      font-size: 65px;
       font-weight: bold;
       color: white;
       letter-spacing: -5px;
-      line-height: 97px; }
+      line-height: 55px; }
     .bullets .ser-intro h1, .bullets .ser-intro h4 {
       margin-top: 5px; }
   .bullets .ser {
-    width: 50%;
-    float: left;
-    display: table-cell;
     font-size: 20px;
     font-family: fantasy;
     color: white;
     text-shadow: 1px 1px 2px #002853;
     letter-spacing: 2px; }
+    @media (min-width: 768px) {
+      .bullets .ser {
+        width: 50%;
+        float: left;
+        display: table-cell; } }
 
-.logoman-comp {
-  float: right;
-  width: 25%;
-  height: 300px; }
-  .logoman-comp img {
+@media (min-width: 768px) {
+  .logoman-comp {
     float: right;
-    height: 370px; }
+    width: 25%;
+    height: 300px; } }
+.logoman-comp img {
+  height: 250px; }
+  @media (min-width: 768px) {
+    .logoman-comp img {
+      float: right;
+      height: 370px; } }
 
 .intro-ser {
   text-align: center; }
@@ -124,15 +172,16 @@ nav.navbar.navbar-default {
   .three-comps .comp-box {
     margin: 10px;
     padding: 5%; }
-  .three-comps .comp {
-    padding: 2%;
-    width: 33.33%;
-    display: table-cell; }
-    .three-comps .comp .comp1, .three-comps .comp .comp2, .three-comps .comp .comp3 {
-      text-align: center; }
-    .three-comps .comp img {
-      width: 200px;
-      margin: 0 auto; }
+  @media (min-width: 768px) {
+    .three-comps .comp {
+      padding: 2%;
+      width: 33.33%;
+      display: table-cell; } }
+  .three-comps .comp .comp1, .three-comps .comp .comp2, .three-comps .comp .comp3 {
+    text-align: center; }
+  .three-comps .comp img {
+    width: 200px;
+    margin: 0 auto; }
 
 .our-service {
   width: 100%;
@@ -140,14 +189,72 @@ nav.navbar.navbar-default {
   background-image: url("../img/hr.png");
   background-repeat: no-repeat;
   background-position-x: center;
-  margin-top: 20px; }
-  .our-service .dropdown {
-    width: 70%;
-    float: left; }
+  margin-top: 20px;
+  background-size: 100%; }
+  @media (min-width: 768px) {
+    .our-service .dropdown {
+      width: 70%;
+      float: left; } }
+  .our-service .dropdown .panel-heading {
+    border-radius: 0px; }
+  .our-service .dropdown .panel-default > .panel-heading {
+    color: black;
+    font-weight: bold;
+    background-color: #ABBECE; }
   .our-service .needs {
-    float: right;
-    width: 25%;
-    padding: 25px;
-    margin-left: 10px;
+    padding: 15px;
     background-color: white;
     box-shadow: 0px 0px 1px black; }
+    @media (min-width: 768px) {
+      .our-service .needs {
+        float: right;
+        width: 25%;
+        margin-left: 10px; } }
+
+.prices {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/hr.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-top: 20px;
+  background-size: 100%; }
+  .prices .prices-details {
+    padding: 15px;
+    background-color: white; }
+  .prices img {
+    width: 100%; }
+  .prices .virus-comp {
+    width: 75%;
+    float: left; }
+    .prices .virus-comp .need-quote-call {
+      background: #58ccef;
+      /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover, #58ccef 1%, #00a6e8 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #58ccef), color-stop(100%, #00a6e8));
+      /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(center, ellipse cover, #58ccef 1%, #00a6e8 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(center, ellipse cover, #58ccef 1%, #00a6e8 100%);
+      /* Opera 12+ */
+      background: -ms-radial-gradient(center, ellipse cover, #58ccef 1%, #00a6e8 100%);
+      /* IE10+ */
+      background: radial-gradient(ellipse at center, #58ccef 1%, #00a6e8 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58ccef', endColorstr='#00a6e8',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */
+      color: white;
+      width: 90%;
+      letter-spacing: 2px;
+      padding: 1%;
+      text-align: right;
+      float: right; }
+    .prices .virus-comp .img-virus-comp {
+      width: 10%;
+      float: left; }
+      .prices .virus-comp .img-virus-comp img {
+        min-width: 125px; }
+  .prices .discount {
+    width: 20%;
+    float: right; }
