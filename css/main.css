@@ -13,6 +13,11 @@ a {
 table {
   width: 100%; }
 
+h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px; }
+
 .tg {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -43,84 +48,35 @@ table {
 .container {
   padding: 0px; }
 
-@media (min-width: 768px) {
-  .nav-height {
-    height: 70px; } }
-
-.nav-here {
-  width: 100%;
-  background-color: white; }
-
-.phone-num {
-  width: 240px;
-  height: 40px;
-  float: right; }
-  .phone-num img {
-    height: 100%; }
-
 .container-fluid {
-  padding-top: 30px; }
-  @media (min-width: 768px) {
-    .container-fluid {
-      padding: 30px; } }
+  padding: 25px; }
 
-.logo {
-  width: 110px; }
+.navbar {
+  margin-bottom: 0px; }
+  .navbar .navbar-brand {
+    padding: 0px 15px; }
+    .navbar .navbar-brand .a {
+      padding: 0px; }
+    .navbar .navbar-brand img {
+      width: 80px;
+      float: right; }
+  .navbar .navbar-right img {
+    width: 150px; }
 
-.navbar-brand {
-  padding: 0; }
-
-@media (min-width: 768px) {
-  .navbar-collapse {
-    padding-right: 0px; } }
-
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent; }
-
-.nav-bar {
-  margin-top: 10px; }
-  @media (min-width: 768px) {
-    .nav-bar {
-      float: right; } }
-  .nav-bar .contact {
-    padding-right: 0px; }
-
-.navbar-toggle {
-  margin-right: 0px; }
-
-nav.navbar.navbar-default {
-  display: inline;
-  display: right;
-  padding: 0px; }
-
-.navbar-nav > li > a {
-  line-height: 0px; }
-
-.nav > li > a {
-  padding: 15px 0px; }
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border-top: 0px; }
+.phone {
+  background-color: #006698;
+  height: 40px; }
 
 .main {
-  background: #d0e4f4;
-  /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #d0e4f4 1%, #87a9c6 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #d0e4f4), color-stop(100%, #87a9c6));
-  /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, #d0e4f4 1%, #87a9c6 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, #d0e4f4 1%, #87a9c6 100%);
-  /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, #d0e4f4 1%, #87a9c6 100%);
-  /* IE10+ */
-  background: radial-gradient(ellipse at center, #d0e4f4 1%, #87a9c6 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f4', endColorstr='#87a9c6',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-  padding-bottom: 20px; }
+  background: #0084c5;
+  background: -moz-linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #0084c5), color-stop(36%, #0489c3), color-stop(66%, #30cabf), color-stop(100%, #2fbcb2));
+  background: -webkit-linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
+  background: -o-linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
+  background: -ms-linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
+  background: linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0084c5',endColorstr='#2fbcb2',GradientType=1);
+  min-height: 500px; }
 
 .about-service {
   background-color: #ECECEC; }
@@ -140,11 +96,13 @@ nav.navbar.navbar-default {
     .bullets .ser-intro h1, .bullets .ser-intro h4 {
       margin-top: 5px; }
   .bullets .ser {
-    font-size: 20px;
-    font-family: fantasy;
+    font-size: 15px;
+    font-family: sans-serif;
     color: white;
-    text-shadow: 1px 1px 2px #002853;
+    text-shadow: 0px 0px 1px #002853;
     letter-spacing: 2px; }
+    .bullets .ser a {
+      color: white; }
     @media (min-width: 768px) {
       .bullets .ser {
         width: 50%;
@@ -171,7 +129,10 @@ nav.navbar.navbar-default {
   display: table; }
   .three-comps .comp-box {
     margin: 10px;
-    padding: 5%; }
+    padding: 5%;
+    text-align: center; }
+  .three-comps p {
+    color: gray; }
   @media (min-width: 768px) {
     .three-comps .comp {
       padding: 2%;
@@ -191,6 +152,9 @@ nav.navbar.navbar-default {
   background-position-x: center;
   margin-top: 20px;
   background-size: 100%; }
+  @media (min-width: 768px) {
+    .our-service {
+      background-size: 60%; } }
   @media (min-width: 768px) {
     .our-service .dropdown {
       width: 70%;
@@ -219,6 +183,9 @@ nav.navbar.navbar-default {
   background-position-x: center;
   margin-top: 20px;
   background-size: 100%; }
+  @media (min-width: 768px) {
+    .prices {
+      background-size: 60%; } }
   .prices .prices-details {
     padding: 15px;
     background-color: white; }
@@ -258,3 +225,16 @@ nav.navbar.navbar-default {
   .prices .discount {
     width: 20%;
     float: right; }
+
+.service-areas {
+  padding-top: 50px;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/hr.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-top: 20px;
+  background-size: 100%; }
+  @media (min-width: 768px) {
+    .service-areas {
+      background-size: 60%; } }

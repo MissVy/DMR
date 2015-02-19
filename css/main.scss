@@ -8,6 +8,9 @@
 	background-position-x: center;
 	margin-top: 20px;
 	background-size: 100%;
+	@include breakpoint(sm) {
+		background-size: 60%;
+	}
 }
 
 body {
@@ -30,6 +33,13 @@ table {
 
 }
 
+h2 {
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 30px;
+
+}
+
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
@@ -39,108 +49,57 @@ table {
 .container {
 	padding: 0px;
 }
+.container-fluid {
+	padding: 25px;
+}
 
 
 
 
 .site-container {
-	// background-color: white;
-	// box-shadow: 0 0 25px rgb(189, 189, 189);
+	
 }
 
-	// NAVIGATION BAR
-
-	.nav-height {
-		@include breakpoint (sm) {
-			height: 70px;
+// NAVIGATION BAR
+.navbar {
+	margin-bottom: 0px;
+	.navbar-brand{
+		padding: 0px 15px;
+		.a {
+			padding: 0px;
 		}
-	}
-	.nav-here {
-		// background-color: #ECECEC;
-		width: 100%;
-		background-color: white;
-	}
-
-	.phone-num {
-		width: 240px;
-		height: 40px;
-		float: right;
 		img {
-			height: 100%;
-		}
-	}
-
-	.container-fluid {
-		padding-top: 30px;
-		@include breakpoint(sm) {
-			padding: 30px;
-		}
-	}
-
-	.logo {
-		width: 110px;
-	}
-
-	.navbar-brand {
-		padding: 0;
-	}
-
-	.navbar-collapse  {
-		@include breakpoint (sm) {
-			padding-right: 0px;
-		}
-	}
-
-	.navbar-default {
-		background-color: transparent;
-		border-color: transparent;
-	}
-
-	.nav-bar {
-		margin-top: 10px;
-		@include breakpoint (sm) {
+			width: 80px;
 			float: right;
 		}
-		.contact {
-			padding-right: 0px;
+	}
+	.navbar-right {
+		img {
+			width: 150px;
 		}
 	}
+	
+}
 
-	.navbar-toggle {
-		margin-right: 0px;
-	}
+.phone {
+	background-color: #006698;
+	height: 40px;
+}
 
-	nav.navbar.navbar-default {
-		display: inline;
-		display: right;
-		padding: 0px;
-	}
-
-	.navbar-nav > li > a  {
-		line-height: 0px;
-	}
-
-	.nav > li > a {
-		padding: 15px 0px;
-	}
-
-	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-		border-top: 0px;
-	}
 
 //main area
 
 	.main {
 		// background-color: rgb(223, 107, 0);
-		background: #d0e4f4; /* Old browsers */
-		background: -moz-radial-gradient(center, ellipse cover,  #d0e4f4 1%, #87a9c6 100%); /* FF3.6+ */
-		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#d0e4f4), color-stop(100%,#87a9c6)); /* Chrome,Safari4+ */
-		background: -webkit-radial-gradient(center, ellipse cover,  #d0e4f4 1%,#87a9c6 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-radial-gradient(center, ellipse cover,  #d0e4f4 1%,#87a9c6 100%); /* Opera 12+ */
-		background: -ms-radial-gradient(center, ellipse cover,  #d0e4f4 1%,#87a9c6 100%); /* IE10+ */
-		background: radial-gradient(ellipse at center,  #d0e4f4 1%,#87a9c6 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f4', endColorstr='#87a9c6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-		padding-bottom: 20px;
+		background: #0084c5;
+		background: -moz-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		background: -webkit-gradient(linear,left bottom,right top,color-stop(0,#0084c5),color-stop(36%,#0489c3),color-stop(66%,#30cabf),color-stop(100%,#2fbcb2));
+		background: -webkit-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		background: -o-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		background: -ms-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		background: linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0084c5',endColorstr='#2fbcb2',GradientType=1);
+		min-height: 500px;
 	}
 
 	.about-service {
@@ -163,13 +122,18 @@ table {
 			h1, h4 {
 				margin-top: 5px;
 			}
+
+
 		}
 		.ser{
-			font-size: 20px;
-			font-family: fantasy;
+			font-size: 15px;
+			font-family: sans-serif;
 			color: white;
-			text-shadow: 1px 1px 2px rgb(0, 40, 83);
+			text-shadow: 0px 0px 1px rgb(0, 40, 83);
 			letter-spacing: 2px;
+			a {
+				color: white;
+			}
 			@include breakpoint(sm) {
 
 				width: 50%;
@@ -206,6 +170,10 @@ table {
 		.comp-box {
 			margin: 10px;
 			padding: 5%;
+			text-align: center;
+		}
+		p {
+			color: gray
 		}
 		.comp {
 
@@ -305,4 +273,9 @@ table {
 
 }
 
+
+.service-areas {
+	padding-top: 50px;
+	@include section-block;
+}
 
