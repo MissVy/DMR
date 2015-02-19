@@ -1,6 +1,6 @@
 /*components*/
 body {
-  background-color: #ECECEC; }
+  background-color: #F1F1F1; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: white;
@@ -77,9 +77,6 @@ h2 {
   background: linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0084c5',endColorstr='#2fbcb2',GradientType=1);
   min-height: 500px; }
-
-.about-service {
-  background-color: #ECECEC; }
 
 .bullets {
   display: table;
