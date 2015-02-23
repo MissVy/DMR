@@ -99,7 +99,7 @@ h2 {
 		background: -ms-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
 		background: linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0084c5',endColorstr='#2fbcb2',GradientType=1);
-		min-height: 500px;
+		min-height: 430px;
 	}
 
 	.about-service {
@@ -217,8 +217,17 @@ h2 {
 			width: 25%;
 			margin-left: 10px;
 		}
-		background-color: white;
-		box-shadow: 0px 0px 1px black;
+		.image-of-logoman {
+			text-align: right;
+			img {
+				width: 65%;
+			}
+		}
+		.comp-needs-offer {
+			padding: 20px;
+			background-color: white;
+			
+		}
 	}
 
 
@@ -234,8 +243,10 @@ h2 {
 	}
 
 	.virus-comp {
-		width: 75%;
-		float: left;
+		@include breakpoint (sm) {
+			width: 75%;
+			float: left;
+		}
 		.need-quote-call {
 			background: #58ccef; /* Old browsers */
 			background: -moz-radial-gradient(center, ellipse cover,  #58ccef 1%, #00a6e8 100%); /* FF3.6+ */
@@ -263,8 +274,7 @@ h2 {
 	}
 
 	.discount {
-		width: 20%;
-		float: right;
+		
 	}
 	@include section-block;
 	@include breakpoint (sm) {
@@ -289,3 +299,58 @@ h2 {
 	@include section-block;
 }
 
+
+.contact-us-full {
+		
+		background: #0084c5;
+		background: -moz-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		background: -webkit-gradient(linear,left bottom,right top,color-stop(0,#0084c5),color-stop(36%,#0489c3),color-stop(66%,#30cabf),color-stop(100%,#2fbcb2));
+		background: -webkit-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		background: -o-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		background: -ms-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		background: linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0084c5',endColorstr='#2fbcb2',GradientType=1);
+	.contact-us {
+		padding-top: 60px;
+	}
+	h2 {
+		float: left;
+		color: white;
+	}
+	.form {
+		@include breakpoint (sm) {
+			width: 60%;
+			float: left;
+		}
+		
+		.input {
+			margin-bottom: 10px;
+			border: none;
+			border-radius: 0px;
+		}
+		.sub {
+			width: 100%;
+			background-color: rgb(46, 41, 41);
+			border: none;
+			height: 50px;
+			font-size: 22px;
+			font-weight: bold;
+			color: white;
+			@include breakpoint (sm) {
+				width: 250px;
+			}
+		}
+
+	}
+	.logoman-talk {
+		padding-top: 30px;
+		img {
+			width: 100%;
+		}
+		@include breakpoint (sm){
+
+			width: 35%;
+			float: right;
+		}
+	}
+}
