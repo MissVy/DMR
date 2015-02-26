@@ -48,6 +48,7 @@ h2 {
 /*general*/
 .container {
 	padding: 0px;
+	position:relative;
 }
 .container-fluid {
 	padding: 25px;
@@ -74,41 +75,59 @@ h2 {
 		}
 	}
 	.navbar-right {
+		display: block;
 		img {
 			width: 150px;
 		}
+		@-webkit-keyframes shake{
+			0%{-webkit-transform:translate(1px,0px) rotate(0deg);}
+			10%{-webkit-transform:translate(-0px,-12px) rotate(-1deg);}
+			20%{-webkit-transform:translate(-2px,0px) rotate(1deg);}
+			30%{-webkit-transform:translate(0px,1px) rotate(0deg);}
+			40%{-webkit-transform:translate(0px,-1px) rotate(1deg);}
+			50%{-webkit-transform:translate(0px,1px) rotate(-1deg);}
+			60%{-webkit-transform:translate(-1px,0px) rotate(0deg);}
+			70%{-webkit-transform:translate(1px,0px) rotate(-1deg);}
+			80%{-webkit-transform:translate(-1px,-1px) rotate(1deg);}
+			90%{-webkit-transform:translate(1px,1px) rotate(0deg);}
+			100%{-webkit-transform:translate(1px,-1px) rotate(-1deg);}
+		}
+		a:hover {
+			-webkit-animation-name: 'shake';
+			-webkit-animation-duration: 0.8s;
+			-webkit-transform-origin: 50% 50%;
+			-webkit-animation-iteration-count: 1s;
+			-webkit-animation-timing-function: linear;
+		}
+	
 	}
 	
 }
 
-.phone {
-	background-color: #006698;
-	height: 40px;
-}
 
 
 //main area
 
 	.main {
 		// background-color: rgb(223, 107, 0);
-		background: #0084c5;
-		background: -moz-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
-		background: -webkit-gradient(linear,left bottom,right top,color-stop(0,#0084c5),color-stop(36%,#0489c3),color-stop(66%,#30cabf),color-stop(100%,#2fbcb2));
-		background: -webkit-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
-		background: -o-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
-		background: -ms-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
-		background: linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0084c5',endColorstr='#2fbcb2',GradientType=1);
-		min-height: 430px;
+		background: #3686be;
+		background: -moz-linear-gradient(45deg,#3686be 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		background: -webkit-gradient(linear,left bottom,right top,color-stop(0,#3686be),color-stop(36%,#0489c3),color-stop(66%,#30cabf),color-stop(100%,#2fbcb2));
+		background: -webkit-linear-gradient(45deg,#3686be 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		background: -o-linear-gradient(45deg,#3686be 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		background: -ms-linear-gradient(45deg,#3686be 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		background: linear-gradient(45deg,#3686be 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3686be',endColorstr='#2fbcb2',GradientType=1);
+		
 	}
+
 
 	.about-service {
 	}
 
 	.bullets {
-		display: table;
-		width: 75%;
-		float: left;
+		
+		text-align: center;
 		.ser-intro {
 			margin-bottom: 30px;
 			h1 {
@@ -121,51 +140,70 @@ h2 {
 			h1, h4 {
 				margin-top: 5px;
 			}
+			h3 {
+				color: white;
+			}
 
 
 		}
+
+	}
+
+	.logoman-comp {
+		text-align: center;
+		@include breakpoint (sm) {
+			height: 240px;
+		}
+		img {
+			height: 240px;
+			@include breakpoint (sm) {
+				height: 240px;
+			}
+		}
+	}
+	.whatSer {
+	
 		.ser{
+			display: table;
 			font-size: 15px;
 			font-family: sans-serif;
 			color: white;
 			text-shadow: 0px 0px 1px rgb(0, 40, 83);
 			letter-spacing: 2px;
+			height: 30px;
+			background-color: #3686be;
+			margin: 3px;
+			padding: 3px;
+			text-align: center;
+			border-radius: 2px;
+			width: 100%;
+			&:hover {
+				background-color: #035680;
+			}
 			a {
 				color: white;
+				&:hover {
+					text-decoration: none;
+					font-weight: bold;
+
+				}
 			}
 			@include breakpoint(sm) {
-
-				width: 50%;
+				width: 30%;
 				float: left;
 				display: table-cell;
 			}
 		}
+
 	}
 
-	.logoman-comp {
-
-		@include breakpoint (sm) {
-			float: right;
-			width: 25%;
-			height: 300px;
-		}
-
-		img {
-			height: 250px;
-			@include breakpoint (sm) {
-				float: right;
-				height: 370px;
-			}
-		}
-		
-	}
+	
 	.intro-ser {
 		text-align: center;
 	}
 	.three-comps {
 		width: 100%;
 		display: table;
-		
 		.comp-box {
 			margin: 10px;
 			padding: 5%;
@@ -175,14 +213,11 @@ h2 {
 			color: gray
 		}
 		.comp {
-
-			
 			@include breakpoint(sm) {
 				padding: 2%;
 				width: 33.33%;
 				display: table-cell;
 			}
-
 			.comp1, .comp2, .comp3 {
 				text-align: center;
 			}
@@ -330,7 +365,7 @@ h2 {
 		}
 		.sub {
 			width: 100%;
-			background-color: rgb(46, 41, 41);
+			background-color: #035680;
 			border: none;
 			height: 50px;
 			font-size: 22px;
@@ -343,14 +378,62 @@ h2 {
 
 	}
 	.logoman-talk {
+
 		padding-top: 30px;
 		img {
-			width: 100%;
+			width: 60%;
 		}
 		@include breakpoint (sm){
-
-			width: 35%;
+			width: 30%;
 			float: right;
+			img {width: 80%;}
 		}
+	}
+}
+
+.productsRec {
+	text-align: center;
+	padding-top: 10px;
+	@include section-block;
+	h4 {
+		color: rgb(201, 201, 201);
+		text-shadow: 1px 1px 1px #fff;
+	}
+	img {
+		-webkit-filter: grayscale(100%); filter: grayscale(100%);
+		width: 80px;
+		opacity: 0.3;
+		&:hover {
+			-webkit-filter: grayscale(0%); filter: grayscale(0%);
+			opacity: 0.8;
+		}
+
+	}
+	
+}
+
+.footer {
+	hr {
+		margin: 5px 0;
+	}
+	.usHere {
+		background-color: #2e3234;
+		color: gray;
+		.whiteLogo {
+			width: 100px !important;
+			-webkit-filter: grayscale(0%); filter: grayscale(0%); 
+		}
+		.social {
+			-webkit-filter: grayscale(100%); filter: grayscale(100%);
+			width: 25px;
+			opacity: 0.5;
+			&:hover {
+				-webkit-filter: grayscale(0%); filter: grayscale(0%);
+				opacity: 1;
+			}
+		}
+	}
+	.meV  {
+		width: 20px !important;
 	}
 }

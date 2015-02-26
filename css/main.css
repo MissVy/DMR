@@ -48,7 +48,8 @@ h2 {
 
 /*general*/
 .container {
-  padding: 0px; }
+  padding: 0px;
+  position: relative; }
 
 .container-fluid {
   padding: 25px; }
@@ -62,28 +63,52 @@ h2 {
     .navbar .navbar-brand img {
       width: 80px;
       float: right; }
-  .navbar .navbar-right img {
-    width: 150px; }
-
-.phone {
-  background-color: #006698;
-  height: 40px; }
+  .navbar .navbar-right {
+    display: block; }
+    .navbar .navbar-right img {
+      width: 150px; }
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 0px) rotate(0deg); }
+  10% {
+    -webkit-transform: translate(0px, -12px) rotate(-1deg); }
+  20% {
+    -webkit-transform: translate(-2px, 0px) rotate(1deg); }
+  30% {
+    -webkit-transform: translate(0px, 1px) rotate(0deg); }
+  40% {
+    -webkit-transform: translate(0px, -1px) rotate(1deg); }
+  50% {
+    -webkit-transform: translate(0px, 1px) rotate(-1deg); }
+  60% {
+    -webkit-transform: translate(-1px, 0px) rotate(0deg); }
+  70% {
+    -webkit-transform: translate(1px, 0px) rotate(-1deg); }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg); }
+  100% {
+    -webkit-transform: translate(1px, -1px) rotate(-1deg); } }
+    .navbar .navbar-right a:hover {
+      -webkit-animation-name: 'shake';
+      -webkit-animation-duration: 0.8s;
+      -webkit-transform-origin: 50% 50%;
+      -webkit-animation-iteration-count: 1s;
+      -webkit-animation-timing-function: linear; }
 
 .main {
-  background: #0084c5;
-  background: -moz-linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #0084c5), color-stop(36%, #0489c3), color-stop(66%, #30cabf), color-stop(100%, #2fbcb2));
-  background: -webkit-linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
-  background: -o-linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
-  background: -ms-linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
-  background: linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0084c5',endColorstr='#2fbcb2',GradientType=1);
-  min-height: 430px; }
+  background: #3686be;
+  background: -moz-linear-gradient(45deg, #3686be 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #3686be), color-stop(36%, #0489c3), color-stop(66%, #30cabf), color-stop(100%, #2fbcb2));
+  background: -webkit-linear-gradient(45deg, #3686be 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
+  background: -o-linear-gradient(45deg, #3686be 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
+  background: -ms-linear-gradient(45deg, #3686be 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
+  background: linear-gradient(45deg, #3686be 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3686be',endColorstr='#2fbcb2',GradientType=1); }
 
 .bullets {
-  display: table;
-  width: 75%;
-  float: left; }
+  text-align: center; }
   .bullets .ser-intro {
     margin-bottom: 30px; }
     .bullets .ser-intro h1 {
@@ -94,31 +119,46 @@ h2 {
       line-height: 55px; }
     .bullets .ser-intro h1, .bullets .ser-intro h4 {
       margin-top: 5px; }
-  .bullets .ser {
-    font-size: 15px;
-    font-family: sans-serif;
-    color: white;
-    text-shadow: 0px 0px 1px #002853;
-    letter-spacing: 2px; }
-    .bullets .ser a {
+    .bullets .ser-intro h3 {
       color: white; }
-    @media (min-width: 768px) {
-      .bullets .ser {
-        width: 50%;
-        float: left;
-        display: table-cell; } }
 
-@media (min-width: 768px) {
-  .logoman-comp {
-    float: right;
-    width: 25%;
-    height: 300px; } }
-.logoman-comp img {
-  height: 250px; }
+.logoman-comp {
+  text-align: center; }
   @media (min-width: 768px) {
-    .logoman-comp img {
-      float: right;
-      height: 370px; } }
+    .logoman-comp {
+      height: 240px; } }
+  .logoman-comp img {
+    height: 240px; }
+    @media (min-width: 768px) {
+      .logoman-comp img {
+        height: 240px; } }
+
+.whatSer .ser {
+  display: table;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 0px 0px 1px #002853;
+  letter-spacing: 2px;
+  height: 30px;
+  background-color: #3686be;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 2px;
+  width: 100%; }
+  .whatSer .ser:hover {
+    background-color: #035680; }
+  .whatSer .ser a {
+    color: white; }
+    .whatSer .ser a:hover {
+      text-decoration: none;
+      font-weight: bold; }
+  @media (min-width: 768px) {
+    .whatSer .ser {
+      width: 30%;
+      float: left;
+      display: table-cell; } }
 
 .intro-ser {
   text-align: center; }
@@ -268,7 +308,7 @@ h2 {
     border-radius: 0px; }
   .contact-us-full .form .sub {
     width: 100%;
-    background-color: #2e2929;
+    background-color: #035680;
     border: none;
     height: 50px;
     font-size: 22px;
@@ -280,8 +320,56 @@ h2 {
   .contact-us-full .logoman-talk {
     padding-top: 30px; }
     .contact-us-full .logoman-talk img {
-      width: 100%; }
+      width: 60%; }
     @media (min-width: 768px) {
       .contact-us-full .logoman-talk {
-        width: 35%;
-        float: right; } }
+        width: 30%;
+        float: right; }
+        .contact-us-full .logoman-talk img {
+          width: 80%; } }
+
+.productsRec {
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
+  background-image: url("../img/hr.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-top: 20px;
+  background-size: 100%; }
+  @media (min-width: 768px) {
+    .productsRec {
+      background-size: 60%; } }
+  .productsRec h4 {
+    color: #c9c9c9;
+    text-shadow: 1px 1px 1px #fff; }
+  .productsRec img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 80px;
+    opacity: 0.3; }
+    .productsRec img:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+      opacity: 0.8; }
+
+.footer hr {
+  margin: 5px 0; }
+.footer .usHere {
+  background-color: #2e3234;
+  color: gray; }
+  .footer .usHere .whiteLogo {
+    width: 100px !important;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); }
+  .footer .usHere .social {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 25px;
+    opacity: 0.5; }
+    .footer .usHere .social:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+      opacity: 1; }
+.footer .meV {
+  width: 20px !important; }
