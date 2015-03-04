@@ -152,8 +152,7 @@ h2 {
   .whatSer .ser a {
     color: white; }
     .whatSer .ser a:hover {
-      text-decoration: none;
-      font-weight: bold; }
+      text-decoration: none; }
   @media (min-width: 768px) {
     .whatSer .ser {
       width: 30%;
@@ -202,7 +201,12 @@ h2 {
   .our-service .dropdown .panel-default > .panel-heading {
     color: black;
     font-weight: bold;
-    background-color: #ABBECE; }
+    background-color: #3686be; }
+    .our-service .dropdown .panel-default > .panel-heading a {
+      color: white;
+      text-decoration: none; }
+    .our-service .dropdown .panel-default > .panel-heading:hover {
+      background-color: #035680; }
   .our-service .needs {
     padding: 15px; }
     @media (min-width: 768px) {
@@ -213,10 +217,10 @@ h2 {
     .our-service .needs .image-of-logoman {
       text-align: right; }
       .our-service .needs .image-of-logoman img {
-        width: 65%; }
-    .our-service .needs .comp-needs-offer {
-      padding: 20px;
-      background-color: white; }
+        width: 200px; }
+        @media (min-width: 768px) {
+          .our-service .needs .image-of-logoman img {
+            width: 65%; } }
 
 .prices {
   width: 100%;
@@ -227,50 +231,61 @@ h2 {
   background-size: 100%; }
   .prices .prices-details {
     display: none; }
-  .prices img {
-    width: 100%; }
-  @media (min-width: 768px) {
-    .prices .virus-comp {
-      width: 75%;
-      float: left; } }
-  .prices .virus-comp .need-quote-call {
-    background: #58ccef;
-    /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #58ccef 1%, #00a6e8 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #58ccef), color-stop(100%, #00a6e8));
-    /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover, #58ccef 1%, #00a6e8 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover, #58ccef 1%, #00a6e8 100%);
-    /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover, #58ccef 1%, #00a6e8 100%);
-    /* IE10+ */
-    background: radial-gradient(ellipse at center, #58ccef 1%, #00a6e8 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58ccef', endColorstr='#00a6e8',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */
-    color: white;
-    width: 90%;
-    letter-spacing: 2px;
-    padding: 1%;
-    text-align: right;
-    float: right; }
-  .prices .virus-comp .img-virus-comp {
-    width: 10%;
-    float: left; }
-    .prices .virus-comp .img-virus-comp img {
-      min-width: 125px; }
+  .prices .virus-comp {
+    width: 100%;
+    height: auto; }
+    .prices .virus-comp .need-quote-call {
+      color: white;
+      letter-spacing: 2px;
+      padding: 1%;
+      text-align: center;
+      height: auto;
+      background: #58ccef;
+      /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover, #58ccef 1%, #00a6e8 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #58ccef), color-stop(100%, #00a6e8));
+      /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(center, ellipse cover, #58ccef 1%, #00a6e8 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(center, ellipse cover, #58ccef 1%, #00a6e8 100%);
+      /* Opera 12+ */
+      background: -ms-radial-gradient(center, ellipse cover, #58ccef 1%, #00a6e8 100%);
+      /* IE10+ */
+      background: radial-gradient(ellipse at center, #58ccef 1%, #00a6e8 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58ccef', endColorstr='#00a6e8',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+      .prices .virus-comp .need-quote-call h4 {
+        margin: 15px; }
+    .prices .virus-comp .img-virus-comp {
+      padding: 20px; }
+      @media (min-width: 768px) {
+        .prices .virus-comp .img-virus-comp {
+          text-align: center; } }
+      .prices .virus-comp .img-virus-comp img {
+        min-width: 125px;
+        max-width: 200px; }
+  .prices .discount {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+    color: white; }
+    .prices .discount h2 {
+      margin: 0; }
   @media (min-width: 768px) {
     .prices {
       background-size: 60%; } }
   @media (min-width: 768px) {
     .prices .prices-details {
       display: block;
-      padding: 15px;
+      padding: 40px;
       background-color: white; }
     .prices .small-table {
-      display: none; } }
+      display: none; }
+      .prices .small-table .shadow {
+        vertical-align: middle;
+        width: 100%; } }
 
 .service-areas {
   padding-top: 50px;
@@ -280,6 +295,21 @@ h2 {
   background-position-x: center;
   margin-top: 20px;
   background-size: 100%; }
+  .service-areas .service-here .table-ser {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    vertical-align: top; }
+    .service-areas .service-here .table-ser .b {
+      font-weight: bold; }
+    @media (min-width: 768px) {
+      .service-areas .service-here .table-ser {
+        -webkit-column-count: 6;
+        -moz-column-count: 6;
+        column-count: 6; } }
+    .service-areas .service-here .table-ser li {
+      display: list-item;
+      list-style-type: none; }
   @media (min-width: 768px) {
     .service-areas {
       background-size: 60%; } }
@@ -293,6 +323,9 @@ h2 {
   background: -ms-linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
   background: linear-gradient(45deg, #0084c5 0, #0489c3 36%, #30cabf 66%, #2fbcb2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0084c5',endColorstr='#2fbcb2',GradientType=1); }
+  @media (min-width: 768px) {
+    .contact-us-full {
+      height: 80vh; } }
   .contact-us-full .contact-us {
     padding-top: 60px; }
   .contact-us-full h2 {

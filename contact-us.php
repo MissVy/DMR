@@ -50,7 +50,7 @@
 			<form class="contactForm.html" name="contactform" method="post" action="lib/send_form_email.php">
 				<input class="form-control input" placeholder="Name*" type="text" name="first_name" maxlength="50" size="30">
 				<input class="form-control input" placeholder="Email Address*" type="text" name="email" maxlength="80" size="30">
-				<input class="form-control input" placeholder="Telephone Number" type="text" name="telephone" maxlength="30" size="30">
+				<input class="form-control input" placeholder="Telephone Number*" type="text" name="telephone" maxlength="30" size="30">
 				<textarea class="form-control input" placeholder="Message*" name="comments" maxlength="1000" cols="25" rows="4"></textarea>
 				<button class="sub" type="submit">    SEND    </button>
 			</form>
@@ -137,16 +137,15 @@
 	<div class="usHere">
 		<div class="container">
 			<div class="container-fluid">
-				<img class="whiteLogo" src="img/DMClogowhite.png"/>
-				DMR PC Services Sydney
-				<br>
+				<img class="whiteLogo" src="img/DMClogowhite.png"/> <br>
+				DMR PC Services Sydney <br>
 				Phone:0481 204 883 <br>
 				ABN:45 567 635 500 <br>
 				(c) 2014 DMR PC Services <br>
-				<img src="img/facebook.jpg"/>
-				<img src="img/pinterest.jpg"/>
-				<img src="img/twitter.jpg"/>
-				<img src="img/googlePlus.jpg"/>
+				<img class="social" src="img/facebook.jpg"/>
+				<img class="social" src="img/pinterest.jpg"/>
+				<img class="social" src="img/twitter.jpg"/>
+				<img class="social" src="img/googlePlus.jpg"/>
 				<hr>
 				Website Design and Created by <a href="http://www.vyhn.info"> <img class="meV" src="img/round-logo.png"/> </a> Vy Nguyen.
 			</div>

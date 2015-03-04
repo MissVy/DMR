@@ -121,10 +121,6 @@ h2 {
 		
 	}
 
-
-	.about-service {
-	}
-
 	.bullets {
 		
 		text-align: center;
@@ -143,10 +139,7 @@ h2 {
 			h3 {
 				color: white;
 			}
-
-
 		}
-
 	}
 
 	.logoman-comp {
@@ -184,7 +177,7 @@ h2 {
 				color: white;
 				&:hover {
 					text-decoration: none;
-					font-weight: bold;
+					
 
 				}
 			}
@@ -228,61 +221,68 @@ h2 {
 		}
 	}
 
-.our-service {
-   	@include section-block;
-	.dropdown {
-		@include breakpoint(sm) {
-			width: 70%;
-			float: left;
-		}
-		.panel-heading {
-			border-radius: 0px;
-		}
-		.panel-default > .panel-heading {
-			color: black;
-			font-weight: bold;
-			background-color: #ABBECE;
-		}
-	}
+	.our-service {
+	   	@include section-block;
+		.dropdown {
+			@include breakpoint(sm) {
+				width: 70%;
+				float: left;
+			}
+			.panel-heading {
+				border-radius: 0px;
+			}
+			.panel-default > .panel-heading {
+				color: black;
+				font-weight: bold;
+				background-color: #3686be;
+				a {
+					color: white;
+					text-decoration: none;
+				
+				}
 
-	.needs {
-		padding: 15px;
-		@include breakpoint(sm) {
-			float: right;
-			width: 25%;
-			margin-left: 10px;
-		}
-		.image-of-logoman {
-			text-align: right;
-			img {
-				width: 65%;
+				&:hover {
+					background-color: #035680;
+				}
+				
 			}
 		}
-		.comp-needs-offer {
-			padding: 20px;
-			background-color: white;
-			
+
+		.needs {
+			padding: 15px;
+			@include breakpoint(sm) {
+				float: right;
+				width: 25%;
+				margin-left: 10px;
+			}
+			.image-of-logoman {
+				text-align: right;
+				img {
+					width: 200px;
+					@include breakpoint(sm) {
+						width: 65%;
+					}
+				}
+			}
+			.comp-needs-offer {
+			}
 		}
 	}
-
-
-}
 
 .prices {
 	.prices-details {
 		display: none;
 	}
-
-	img {
-		width: 100%;
-	}
-
 	.virus-comp {
-		@include breakpoint (sm) {
-			width: 75%;
-			float: left;
-		}
+		width: 100%;
+		height: auto;
+		
 		.need-quote-call {
+			color: white;
+			letter-spacing: 2px;
+			padding: 1%;
+			text-align: center;
+			height: auto;
 			background: #58ccef; /* Old browsers */
 			background: -moz-radial-gradient(center, ellipse cover,  #58ccef 1%, #00a6e8 100%); /* FF3.6+ */
 			background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#58ccef), color-stop(100%,#00a6e8)); /* Chrome,Safari4+ */
@@ -291,36 +291,49 @@ h2 {
 			background: -ms-radial-gradient(center, ellipse cover,  #58ccef 1%,#00a6e8 100%); /* IE10+ */
 			background: radial-gradient(ellipse at center,  #58ccef 1%,#00a6e8 100%); /* W3C */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58ccef', endColorstr='#00a6e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-			color: white;
-			width: 90%;
-			letter-spacing: 2px;
-			padding: 1%;
-			text-align: right;
-			float: right;
+			h4 {
+				margin:  15px;
+			}
+			@include breakpoint(sm) {
+			}
+
 		}
 		.img-virus-comp {
-			width:  10%;
-			float: left;
+			padding: 20px;
+			@include breakpoint(sm) {
+				text-align: center;
+			}
 			img {
-				
 				min-width: 125px;
+				max-width: 200px;
 			}
 		}
 	}
 
 	.discount {
-		
+		background-color: orange;
+		text-align: center;
+		padding:10px;
+		color: white;
+		h2 {
+			margin: 0;
+		}
 	}
+
 	@include section-block;
 	@include breakpoint (sm) {
 		.prices-details {
 			display: block;
-			padding: 15px;
+			padding: 40px;
 			background-color: white;
 		}
 
 		.small-table {
 			display: none;
+			.shadow {
+				vertical-align: middle;
+				width: 100%;
+			}
 		}
 	}
 
@@ -331,20 +344,49 @@ h2 {
 
 .service-areas {
 	padding-top: 50px;
+	.service-here {
+		.table-ser {
+			-webkit-column-count: 2;
+	       	-moz-column-count: 2;
+	         column-count: 2;
+			vertical-align: top;
+			.b {
+				font-weight: bold;
+			}
+
+			@include breakpoint(sm) {
+				-webkit-column-count: 6;
+	       		-moz-column-count: 6;
+	            column-count: 6;
+	        }
+			li {
+				display: list-item;
+				list-style-type: none;
+			}
+
+
+		}
+	}
 	@include section-block;
+
+	
 }
 
 
 .contact-us-full {
 		
-		background: #0084c5;
-		background: -moz-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
-		background: -webkit-gradient(linear,left bottom,right top,color-stop(0,#0084c5),color-stop(36%,#0489c3),color-stop(66%,#30cabf),color-stop(100%,#2fbcb2));
-		background: -webkit-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
-		background: -o-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
-		background: -ms-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
-		background: linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0084c5',endColorstr='#2fbcb2',GradientType=1);
+	background: #0084c5;
+	background: -moz-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+	background: -webkit-gradient(linear,left bottom,right top,color-stop(0,#0084c5),color-stop(36%,#0489c3),color-stop(66%,#30cabf),color-stop(100%,#2fbcb2));
+	background: -webkit-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+	background: -o-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+	background: -ms-linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+	background: linear-gradient(45deg,#0084c5 0,#0489c3 36%,#30cabf 66%,#2fbcb2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0084c5',endColorstr='#2fbcb2',GradientType=1);
+	@include breakpoint(sm) {
+
+		height: 80vh;
+	}
 	.contact-us {
 		padding-top: 60px;
 	}
